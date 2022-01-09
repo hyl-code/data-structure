@@ -4,8 +4,8 @@ using   namespace   std;
 
 #define NUM 5
 
-const LIST_INIT_SIZE = 100;
-const LISTINCREMENT = 10;
+const int LIST_INIT_SIZE = 100;
+const int LISTINCREMENT = 10;
 
 typedef struct{
 	int *elem;
@@ -31,7 +31,6 @@ void ErrorMessage(char *s){
 
 void InitList_Sq(SqList &L){
 	L.elem = new int[NUM];
-
 	L.length = 0;
 	L.listsize = NUM;
 	L.incrementsize = 0;
@@ -117,7 +116,7 @@ int main(void){
 		}
 	}
 
-	printf("A¡ÉB = ");
+	printf("A ¡ÉB = ");
 	for(i = 0;i < La.length; i++){
 		printf("%4d", La.elem[i]);
 	}

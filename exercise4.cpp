@@ -39,9 +39,13 @@ void QuickSort(SqList & L, int low, int high){
 }
 
 int main(void){
-	int a[NUM] = {4, 4, 4, 3, 3, 1, 1, 2, 2, 4};
+	int a[NUM];
 	SqList L;
 	int i;
+	cout << "请输入一个大小为10的数组：" << endl; 
+	for(i = 0; i < NUM; i++){
+		cin >> a[i];
+	} 
 	L.elem = a;
 	L.length = NUM;
 	QuickSort(L, 0, L.length - 1);
